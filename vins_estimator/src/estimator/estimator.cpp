@@ -805,7 +805,7 @@ void Estimator::processIMU_with_wheel(double t, double dt, const Vector3d &linea
         pre_integrations[frame_count]->push_back_wheels(dt, linear_acceleration, angular_velocity , velVec);
 //        cout<<"pre_integrations vel_0 "<<pre_integrations[frame_count]->vel_0.transpose()<<endl;
 
-        Eigen::Vector3d delta_p_imu = pre_integrations[frame_count]->delta_q * (-tiv) + riv * pre_integrations[frame_count]->delta_p_i_vel + tiv;
+//        Eigen::Vector3d delta_p_imu = pre_integrations[frame_count]->delta_q * (-tiv) + riv * pre_integrations[frame_count]->delta_p_i_vel + tiv;
 //        std::cout<<setprecision(6)
 //        <<"pre_integrations: delta_p="<<pre_integrations[frame_count]->delta_p.transpose()
 //        <<"\tdelta_p_i_vel="<<pre_integrations[frame_count]->delta_p_i_vel.transpose()
